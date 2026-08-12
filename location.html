@@ -12,39 +12,12 @@
 </head>
 <body>
 
-<div class="utility">
-  <div class="wrap">
-    <div class="u-left">
-      <a href="https://www.daegu.ac.kr" target="_blank">대구대학교</a>
-      <a href="https://psychology.daegu.ac.kr" target="_blank">심리학과</a>
-    </div>
-    <div class="u-right"></div>
-  </div>
-</div>
-
-<header>
-  <div class="wrap header-inner">
-    <a href="index.html" class="brand">
-      <img class="emblem-img" src="symbol_6.jpg" alt="대구대학교 응용심리연구소 로고"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <span class="emblem" style="display:none">DU</span>
-      <span class="b-text"><strong>응용심리연구소</strong></span>
-    </a>
-    <nav class="gnb">
-      <a href="index.html">연구소 소개</a>
-      <a href="members.html">구성원</a>
-      <a href="activities.html">연구소 활동</a>
-      <a href="location.html" class="active">오시는 길</a>
-    </nav>
-    <button class="burger" onclick="document.querySelector('.gnb').style.display='flex';this.style.display='none'">☰</button>
-  </div>
-</header>
+<div id="site-header"></div>
 
 <section class="subhero">
   <div class="arc"></div>
   <div class="wrap">
     <h1>오시는 길</h1>
-    <p class="crumb"><a href="index.html">홈</a> &nbsp;›&nbsp; 오시는 길</p>
   </div>
 </section>
 
@@ -52,18 +25,22 @@
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="row"><span class="ci">📍</span><div><h4>주소</h4><p>경상북도 경산시 진량읍 대구대로 201<br>대구대학교 사회과학대학 응용심리연구소 (38453)</p></div></div>
-        <div class="row"><span class="ci">📞</span><div><h4>전화</h4><p>053-850-0000</p></div></div>
-        <div class="row"><span class="ci">📠</span><div><h4>팩스</h4><p>053-850-0000</p></div></div>
-        <div class="row"><span class="ci">✉️</span><div><h4>이메일</h4><p>lab@daegu.ac.kr</p></div></div>
-        <div class="row"><span class="ci">🕗</span><div><h4>운영 시간</h4><p>평일 09:00 – 18:00 (주말·공휴일 휴무)</p></div></div>
+        <div class="row"><div><h4>주소</h4><p>경상북도 경산시 대구대로 201<br>대구대학교 사회과학관 2409호 (38453)</p></div></div>
+        <div class="row"><div><h4>전화</h4><p>053-850-6370</p></div></div>
+        <div class="row"><div><h4>이메일</h4><p>baskya@daegu.ac.kr</p></div></div>
       </div>
-      <div class="map">지도 영역 (구글/카카오 지도 임베드 자리)</div>
+      <div class="map" style="padding:0;overflow:hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x35666da1c9530cdf%3A0x55a6413b4a8f2a39!2z64yA6rWs64yA7ZWZ6rWQIOyCrO2ajOqzvO2VmeuMgO2Vmeq0gA!5e0!3m2!1sko!2skr!4v1786532322169!5m2!1sko!2skr"
+          style="border:0;width:100%;height:100%;min-height:360px"
+          loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen title="대구대학교 응용심리연구소 위치"></iframe>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 교통 안내 -->
+<!-- 교통 안내 (필요하면 아래 주석을 풀어 사용하세요)
 <section class="block alt">
   <div class="wrap prose">
     <h3>대중교통 이용</h3>
@@ -74,30 +51,15 @@
     </ul>
     <h3>자가용 이용</h3>
     <ul>
-      <li>내비게이션: "대구대학교 사회과학대학" 검색</li>
+      <li>내비게이션: "대구대학교 사회과학관" 검색</li>
       <li>주차: 교내 주차장 이용 안내를 적어주세요</li>
     </ul>
   </div>
 </section>
+-->
 
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-info">
-        <div class="foot-logo">대구대학교 응용심리연구소</div>
-        <p>경상북도 경산시 진량읍 대구대로 201 · 사회과학대학<br>
-           TEL 053-850-0000 · FAX 053-850-0000 · lab@daegu.ac.kr</p>
-      </div>
-      <div class="foot-links">
-        <a href="index.html">연구소 소개</a>
-        <a href="members.html">구성원</a>
-        <a href="activities.html">연구소 활동</a>
-        <a href="location.html">오시는 길</a>
-      </div>
-    </div>
-    <p class="copy">COPYRIGHT © 2026 DAEGU UNIVERSITY APPLIED PSYCHOLOGY RESEARCH CENTER. ALL RIGHTS RESERVED.</p>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
+<script src="layout.js"></script>
 </body>
 </html>
