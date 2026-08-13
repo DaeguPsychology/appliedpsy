@@ -230,7 +230,7 @@ footer{background:#222;color:#A8A8A8;padding:50px 0 34px}
   nav.gnb{display:none}
   nav.gnb.open{display:flex;flex-direction:column;order:3;flex-basis:100%;width:100%;
     border-top:1px solid var(--line);gap:0;padding:6px 0 10px;margin-top:6px}
-  nav.gnb.open a{font-size:16px;font-weight:500;color:#333;padding:13px 2px}
+  nav.gnb.open a{font-size:16px;font-weight:500;color:#333;padding:13px 2px;text-align:right}
   nav.gnb.open a::after{display:none}
   .burger{display:block}
   .quick .wrap{grid-template-columns:repeat(2,1fr)}
