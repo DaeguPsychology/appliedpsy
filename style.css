@@ -225,7 +225,13 @@ footer{background:#222;color:#A8A8A8;padding:50px 0 34px}
 
 /* ===== 반응형 ===== */
 @media(max-width:980px){
-  nav.gnb,.utility .u-left{display:none}
+  .utility .u-left{display:none}
+  .header-inner{height:auto;min-height:84px;flex-wrap:wrap}
+  nav.gnb{display:none}
+  nav.gnb.open{display:flex;flex-direction:column;order:3;flex-basis:100%;width:100%;
+    border-top:1px solid var(--line);gap:0;padding:6px 0 10px;margin-top:6px}
+  nav.gnb.open a{font-size:16px;font-weight:500;color:#333;padding:13px 2px}
+  nav.gnb.open a::after{display:none}
   .burger{display:block}
   .quick .wrap{grid-template-columns:repeat(2,1fr)}
   .intro-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
@@ -242,4 +248,11 @@ footer{background:#222;color:#A8A8A8;padding:50px 0 34px}
   .work-grid,.team-grid,.gallery,.mission-grid{grid-template-columns:1fr}
   .notice-table td.num{display:none}
   .notice-table th.num{display:none}
+}
+/* 진행 프로젝트 표: 좁은 화면에서는 항목별로 세로 정리 */
+@media(max-width:640px){
+  .proj-table thead{display:none}
+  .proj-table tr{display:block;border-top:2px solid var(--green);padding:14px 4px}
+  .proj-table td{display:block;border:none;padding:3px 2px;width:auto!important;white-space:normal!important}
+  .proj-table td::before{content:attr(data-label);display:block;font-size:12px;font-weight:700;color:var(--green);margin-bottom:2px}
 }
