@@ -44,7 +44,7 @@
 '      <span class="b-text"><strong>응용심리연구소</strong></span>' +
 '    </a>' +
 '    <nav class="gnb">\n      ' + gnb + '\n    </nav>' +
-'    <button class="burger" onclick="document.querySelector(\'.gnb\').style.display=\'flex\';this.style.display=\'none\'">&#9776;</button>' +
+'    <button class="burger" aria-label="메뉴 열기" onclick="document.querySelector(\'.gnb\').classList.toggle(\'open\')">&#9776;</button>' +
 '  </div>' +
 '</header>';
 
